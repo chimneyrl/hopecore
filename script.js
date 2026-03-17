@@ -4,8 +4,8 @@ console.log("Script is loaded!");
 const generateButton = document.getElementById("hopecore-link");
 
 // Correct GitHub raw paths for images (using the updated repo links)
-const regularImagePath = "https://raw.githubusercontent.com/gymney/hopecore/main/assets/hc";
-const specialImagePath = "https://raw.githubusercontent.com/gymney/hopecore/main/assets/daily-reminder-that-you-will-have-this";
+const regularImagePath = "https://raw.githubusercontent.com/chimneyrl/hopecore/main/assets/hc";
+const specialImagePath = "https://raw.githubusercontent.com/chimneyrl/hopecore/main/assets/daily-reminder-that-you-will-have-this";
 
 // Function to fetch and parse the quotes file
 async function getQuotes() {
@@ -24,7 +24,7 @@ async function getQuotes() {
 
 // Function to get a random image URL from GitHub
 async function getRandomImage(folderPath) {
-  const apiUrl = `https://api.github.com/repos/gymney/hopecore/contents/${folderPath}`;
+  const apiUrl = `https://api.github.com/repos/chimneyrl/hopecore/contents/${folderPath}`;
   try {
     const response = await fetch(apiUrl);
 
