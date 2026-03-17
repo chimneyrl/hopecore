@@ -79,7 +79,7 @@ async function generateHopecore() {
     //console.log("Is this a special quote?", isSpecialQuote);
 
     //const folderPath = isSpecialQuote ? "assets/daily-reminder-that-you-will-have-this" : "assets/hc";
-    const folderPath = isSpecialQuote ? "assets/hc";
+    const folderPath = "assets/hc";
     const imageUrl = await getRandomImage(folderPath);
     if (!imageUrl) return;
 
