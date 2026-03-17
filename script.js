@@ -75,10 +75,11 @@ async function generateHopecore() {
     const randomQuote = quotes[Math.floor(Math.random() * quotes.length)].trim();
     console.log("Random quote selected:", randomQuote);
 
-    const isSpecialQuote = randomQuote.toLowerCase() === "daily reminder that you will have this";
-    console.log("Is this a special quote?", isSpecialQuote);
+    //const isSpecialQuote = randomQuote.toLowerCase() === "daily reminder that you will have this";
+    //console.log("Is this a special quote?", isSpecialQuote);
 
-    const folderPath = isSpecialQuote ? "assets/daily-reminder-that-you-will-have-this" : "assets/hc";
+    //const folderPath = isSpecialQuote ? "assets/daily-reminder-that-you-will-have-this" : "assets/hc";
+    const folderPath = isSpecialQuote ? "assets/hc";
     const imageUrl = await getRandomImage(folderPath);
     if (!imageUrl) return;
 
