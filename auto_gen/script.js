@@ -11,7 +11,7 @@ const specialImagePath = "https://raw.githubusercontent.com/chimneyrl/hopecore/m
 async function getQuotes() {
   try {
     console.log("Fetching quotes...");
-    const response = await fetch("./assets/quotes.txt"); // Adjust path if needed
+    const response = await fetch("../assets/quotes.txt"); // Adjust path if needed
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const text = await response.text();
     console.log("Quotes fetched successfully!");
